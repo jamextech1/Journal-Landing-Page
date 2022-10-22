@@ -1,0 +1,255 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+/* COLORS: #343a40  #92400e #fafafa #166534 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat";
+  width: 100%;
+  margin: 0 auto;
+  color: #343a40;
+  display: flex;
+  flex-direction: column;
+  gap: 192px;
+}
+section {
+  width: 85%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+/*  */
+/* header styling */
+/*  */
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(52, 58, 64, 0.88),
+      rgba(52, 58, 64, 0.88)
+    ),
+    url(images/journal-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fafafa;
+  font-family: "Josefin Sans", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  align-items: center;
+  align-self: start;
+  min-height: 8vh;
+}
+.nav_logo {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.nav_links li {
+  list-style: none;
+}
+.nav_links a {
+  text-decoration: none;
+  color: #fafafa;
+  text-transform: uppercase;
+}
+.shop_journal_btn {
+  padding: 10px;
+  border: none;
+  background-color: #fafafa;
+  color: #343a40;
+  border-radius: 10px;
+  box-shadow: 0 0px 25px rgba(240, 247, 255, 0.1);
+  cursor: pointer;
+}
+.shop_journal_btn:hover {
+  transition: all 300ms ease-in-out;
+  background-color: #343a40;
+  border: 1.5px solid #fafafa;
+  color: #fafafa;
+}
+.shop_journal_btn:active {
+  background: linear-gradient(
+    170deg,
+    rgb(52, 58, 64, 0.9),
+    rgba(73, 81, 88, 0.85)
+  );
+  border: 1.5px solid #fafafa;
+  color: #fafafa;
+}
+.header_welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+}
+.header_h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: -1.8px;
+  font-weight: 700;
+}
+.header_p_1 {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  opacity: 90%;
+  letter-spacing: 1px;
+}
+
+/*  */
+/* section one styling */
+/*  */
+.section_one_h2 {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+/* grids */
+.section_one_cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 48px;
+}
+.section_two_cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 64px;
+}
+.section_three_cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 48px;
+}
+/* grids */
+.scetion_text_info {
+  justify-self: center;
+}
+.section_one_img {
+  border-radius: 8px;
+}
+.section_text_h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.section_text_p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+/*  */
+/* footer */
+/*  */
+.footer_p {
+  text-align: center;
+  color: #fafafa;
+  opacity: 90%;
+}
+.footer_p.first_footer_p {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+i {
+  font-size: 24px;
+  opacity: 90%;
+}
+footer {
+  background-color: #343a40;
+  padding: 24px;
+  position: relative;
+}
+footer a.werey-btn {
+  text-decoration: none;
+}
+footer a.werey-btn:visited {
+  color: #343a40;
+}
+i.fa-arrow-up {
+  background-color: rgba(250, 250, 250, 0.89);
+  padding: 8px;
+  border-radius: 100px;
+  position: fixed;
+  right: 3%;
+  bottom: 15%;
+  cursor: pointer;
+}
+
+/*  */
+/*  */
+/* MEDIA QUERIES */
+/*  */
+/*  */
+@media screen and (max-width: 750px) {
+  .section_one_cols,
+  .section_two_cols,
+  .section_three_cols {
+    grid-template-columns: 1fr;
+  }
+  header {
+    text-align: center;
+  }
+  .header_h1 {
+    font-size: 30px;
+  }
+  .header_p_1 {
+    font-size: 16px;
+  }
+  nav {
+    gap: 15%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header_h1 {
+    font-size: 20px;
+  }
+  .header_p_1 {
+    font-size: 12px;
+  }
+  nav {
+    gap: 7%;
+  }
+  .nav_logo {
+    font-size: 16px;
+  }
+  .shop_journal_btn {
+    padding: 6px;
+    font-size: 12px;
+  }
+  .nav_links a {
+    font-size: 12px;
+  }
+}

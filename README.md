@@ -1,2 +1,2 @@
-# Journal-Landing-Page
-This Is my journal landing page frontend project.
+## Journal-Landing-Page
+### This Is my journal landing page frontend project.
